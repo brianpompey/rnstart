@@ -9,10 +9,10 @@ const HomeScreen = () => {
         onPress={() => console.log("BUtton pressed")}
         title="Go to Components Demo"
       />
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => console.log("List pressed")}>
         <Text>Go to list demo</Text>
       </TouchableOpacity>
-      <Pressable onPress={() => console.log("BUtton pressed")}>
+      <Pressable onPress={() => console.log("Pressable pressed")}>
         <Text style={styles.pressableText}>Go to new demo</Text>
       </Pressable>
     </View>
