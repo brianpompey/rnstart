@@ -13,7 +13,7 @@ const HomeScreen = () => {
         <Text>Go to list demo</Text>
       </TouchableOpacity>
       <Pressable onPress={() => console.log("BUtton pressed")}>
-        <Text>Go to new demo</Text>
+        <Text style={styles.pressableText}>Go to new demo</Text>
       </Pressable>
     </View>
   );
@@ -23,6 +23,10 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
   },
+  pressableText : {
+    fontSize: 60,
+    color: 'red'
+  }
 });
 
 export default HomeScreen;
