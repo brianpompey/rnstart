@@ -27,7 +27,8 @@ const SquareScreen = () => {
                 // } else {
                 //     setRed(red + change);
                 // }
-                
+            default:
+                return;
         }
     };
 
