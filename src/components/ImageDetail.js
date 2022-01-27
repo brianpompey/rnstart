@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const ImageDetail = () => {
+const ImageDetail = (props) => {
+    
     return <Text>Shoiw Image of Forest</Text>
 };
 
