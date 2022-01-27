@@ -7,15 +7,15 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>Hello WOrld</Text>
+      <Button 
+        onPress={() => navigation.navigate('Components')}
+        title="Go to Components Demo"
+      />
+      <Button 
+        onPress={() => navigation.navigate('List')}
+        title="Go to List Demo"
+      />
 
-
-      <Pressable onPress={() => navigation.navigate('Components')}>
-        <Text style={styles.pressableText}>Go to Components Demo</Text>
-      </Pressable>
-
-      <Pressable onPress={() => navigation.navigate('List')}>
-        <Text style={styles.pressableText}>Go to List demo</Text>
-      </Pressable>
     </View>
   );
 };
