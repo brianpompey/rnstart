@@ -21,7 +21,10 @@ const styles = StyleSheet.create({
     viewStyle: {
         borderWidth: 4,
         borderColor: 'black',
-        alignItems: 'flex-start'
+        flexDirection: 'row',
+        height: 200,
+        // alignItems: 'center',
+        justifyContent: 'space-around'
     },
     textStyle: {
         borderWidth: 4,
