@@ -5,9 +5,9 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 const reducer = (state, action) => {
     switch (action.type) {
         case 'increment':
-            return {count: state.count + 1};
+            return {counter: state.counter + 1};
         case 'decrement':
-            return {count: state.count - 1};
+            return {counter: state.counter - 1};
     default:
         return;
 
@@ -23,14 +23,29 @@ const CounterScreen = () => {
 
     return (
         <View>
-            <Button title="Increase" onPress={() => {
-                setCounter(counter + 1);
-            }}/>
-            <Button title="Decrease" onPress={() => {
-                setCounter(counter - 1);
-            }}/>
-            <Text>Current Count: {counter} </Text>
+            <Button 
+                title="Increase" 
+                onPress={() => dispatch({
+                    type: 'increment'
+                })}
+            />
+            <Button 
+                title="Decrease" 
+                onPress={() => dispatch({
+                    type: 'decrement'
+                })}
+            />
+            <Text>Current Count: {state.counter} </Text>
         </View>
+        // <View>
+        //     <Button title="Increase" onPress={() => {
+        //         setCounter(counter + 1);
+        //     }}/>
+        //     <Button title="Decrease" onPress={() => {
+        //         setCounter(counter - 1);
+        //     }}/>
+        //     <Text>Current Count: {counter} </Text>
+        // </View>
     )
 };
 
