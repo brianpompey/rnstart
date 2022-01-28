@@ -4,8 +4,10 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case: 
-
+        case 'increment':
+            return {count: state.count + 1};
+        case 'decrement':
+            return {count: state.count - 1};
     default:
         return;
 
